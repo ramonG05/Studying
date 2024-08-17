@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    greet('Ramon')
+    function greet(name) {
+      if (!name) {
+        console.log('Hi, There')
+      }
+      else {
+        console.log(`Hello, ${name}`)
+      }
+    }*/
+
+    function convertToFahrenheit (celcius) {
+      return((celcius* 9 / 5) + 32);
+     
+    }
+    function convertToCelcius(fahrenheit) {
+      return((fahrenheit - 32)* 5 / 9 );
+    }
+    function convertTemp (number, unit) {
+      if (unit === 'C') {
+       const result = convertToFahrenheit(number)
+       return `${result}F`;
+      } else if (unit === 'F') {
+        result = convertToCelcius(number);
+       return `${result}C`;
+
+    }
+  }
+    console.log (convertTemp(22, 'F'));
+   
+     
+
+  </script>
+</body>
+</html>
