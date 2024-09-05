@@ -5,6 +5,7 @@
       
   </head>
   <body>
+    <p class="js-quantity"></p>
     <button onclick="
       console.log(`Cart quantity: ${cartQuantity}`);
 ">Show Quantity</button>
@@ -70,7 +71,7 @@
     ">Reset Cart</button>
     <script>
     let cartQuantity = 0;
-
+    document.querySelector('.js-quantity').innerHTML = `${cartQuantity}`;
     </script>
 
   </body>
